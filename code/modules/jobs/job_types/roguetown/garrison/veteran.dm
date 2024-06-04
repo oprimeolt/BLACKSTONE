@@ -125,11 +125,11 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 					if(prob(A.pickprob))
 						H.possibleclass += A
 						continue
-
+/*
 /client
 	var/whitelisted = 2
 	var/blacklisted = 2
-
+*/
 /client/proc/whitelisted()
 	if(whitelisted != 2)
 		return whitelisted
