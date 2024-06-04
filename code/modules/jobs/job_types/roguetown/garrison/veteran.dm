@@ -8,8 +8,8 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 	flag = VETERAN
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_sexes = list(MALE) //same as town guard
 	allowed_races = list(
