@@ -94,6 +94,8 @@
 	var/list/possibleclass
 	var/advsetup = 0
 	var/advpicking
+	var/advsetupg = 0
+	var/advpickingg
 
 //	var/alignment = ALIGNMENT_TN
 
