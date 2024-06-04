@@ -24,7 +24,6 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 	display_order = JDO_VET
 	whitelist_req = TRUE
 
-	outfit = /datum/outfit/job/roguetown/veteran
 	give_bank_account = 35
 	min_pq = 0
 	max_pq = null
