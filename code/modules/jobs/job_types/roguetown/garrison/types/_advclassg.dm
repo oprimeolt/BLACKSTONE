@@ -37,7 +37,7 @@
 	H.advjobg = name
 	H.advsetupg = 0
 	H.invisibility = null
-	H.cure_blind("advsetup")
+	H.cure_blind("advsetupg")
 	H.SetStun(0)
 	sleep(1)
 	testing("[H] spawn troch")
