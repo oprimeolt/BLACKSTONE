@@ -172,6 +172,7 @@
 #define rogueui_moveq "WEST-1,CENTER+2"
 #define rogueui_eye "WEST-2,CENTER+3"
 #define rogueui_advsetup "CENTER-1,CENTER-1:16"
+#define rogueui_advsetupg "CENTER-1,CENTER-1:16"
 #define rogueui_craft "WEST-4,CENTER+3"
 #define rogueui_skills "WEST-4,CENTER+3"
 #define rogueui_targetdoll "WEST-3:-16,CENTER+4:6"
