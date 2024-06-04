@@ -101,6 +101,7 @@
 
 	var/advjob = null
 	var/canseebandits = FALSE
+	var/advjobg = null
 
 	var/marriedto
 
