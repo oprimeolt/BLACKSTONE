@@ -70,6 +70,8 @@
 
 	init_subtypes(/datum/advclass, GLOB.adv_classes)
 
+	init_subtypes(/datum/advclassg, GLOB.adv_classesg)
+
 	init_subtypes(/datum/anvil_recipe, GLOB.anvil_recipes)
 
 	for(var/i in 0 to 20)
