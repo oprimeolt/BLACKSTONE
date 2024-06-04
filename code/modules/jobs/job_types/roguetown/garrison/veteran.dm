@@ -37,7 +37,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		H.advsetupg = 1
+		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetupg")
 		H.Stun(100)
