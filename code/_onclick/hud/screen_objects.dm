@@ -814,6 +814,50 @@
 			qdel(src)
 
 
+/atom/movable/screen/advsetupg
+	name = ""
+	icon = null
+	icon_state = ""
+
+/atom/movable/screen/advsetupg/New(client/C) //TODO: Make this use INITIALIZE_IMMEDIATE, except its not easy
+	. = ..()
+	addtimer(CALLBACK(src, PROC_REF(check_mob)), 30)
+
+/atom/movable/screen/advsetupg/Destroy()
+	hud.static_inventory -= src
+	return ..()
+
+/atom/movable/screen/advsetupg/proc/check_mob()
+	if(QDELETED(src))
+		return
+	if(!hud)
+		qdel(src)
+		return
+	if(!ishuman(hud.mymob))
+		qdel(src)
+		return
+	var/mob/living/carbon/human/H = hud.mymob
+	if(H.advsetup)
+		alpha = 0
+		icon = 'icons/mob/advsetup.dmi'
+		animate(src, alpha = 255, time = 30)
+
+/atom/movable/screen/advsetupg/Click(location,control,params)
+	if(!hud)
+		qdel(src)
+		return
+	if(!ishuman(hud.mymob))
+		qdel(src)
+		return
+	var/mob/living/carbon/human/H = hud.mymob
+	if(!H.advsetup)
+		qdel(src)
+		return
+	else
+		if(H.advsetupg())
+			qdel(src)
+
+
 /atom/movable/screen/eye_intent
 	name = "eye intent"
 	icon = 'icons/mob/roguehud.dmi'
