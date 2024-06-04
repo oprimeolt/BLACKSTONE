@@ -129,7 +129,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 /client
 	var/whitelisted = 2
 	var/blacklisted = 2
-*/
+
 /client/proc/whitelisted()
 	if(whitelisted != 2)
 		return whitelisted
@@ -150,7 +150,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 			blacklisted = 0
 		return blacklisted
 
-/*
+
 /proc/find_class_json(name, keyy)
 	if(!name || !keyy)
 		return
