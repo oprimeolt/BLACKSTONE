@@ -18,8 +18,8 @@
 	var/plevel_req = 0
 	var/special_req = FALSE //check the json for our ckey
 	var/whitelist_req = FALSE
-	var/ispilgrim = FALSE
-	var/isvillager = FALSE
+	var/isroyalg = FALSE
+	var/isgarrisong = FALSE
 	var/horse = FALSE
 	var/vampcompat = TRUE
 	var/list/traits_applied
