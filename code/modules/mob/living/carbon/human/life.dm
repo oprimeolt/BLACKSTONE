@@ -38,6 +38,9 @@
 	if(advsetup)
 		Stun(100)
 
+	if(advsetupg)
+		Stun(100)
+
 	if(mind)
 		for(var/datum/antagonist/A in mind.antag_datums)
 			A.on_life(src)
