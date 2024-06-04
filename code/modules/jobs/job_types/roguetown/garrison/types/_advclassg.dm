@@ -57,7 +57,7 @@
 			to_chat(M, "<span class='info'>[H.real_name] is the [name].</span>")
 		GLOB.billagerspawns -= H
 
-/datum/advclass/proc/post_equip(mob/living/carbon/human/H)
+/datum/advclassg/proc/post_equip(mob/living/carbon/human/H)
 	addtimer(CALLBACK(H,TYPE_PROC_REF(/mob/living/carbon/human, add_credit)), 20)
 	if(cmode_music)
 		H.cmode_music = cmode_music
