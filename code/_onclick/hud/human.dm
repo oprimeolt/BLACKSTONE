@@ -413,6 +413,11 @@
 	using.hud = src
 	static_inventory += using
 
+	using = new /atom/movable/screen/advsetupg
+	using.screen_loc = rogueui_advsetupg
+	using.hud = src
+	static_inventory += using
+
 /*
 	healthdoll = new /atom/movable/screen/healthdoll()
 	healthdoll.icon = ui_style
