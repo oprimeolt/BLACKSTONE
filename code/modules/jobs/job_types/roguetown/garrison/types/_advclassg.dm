@@ -52,8 +52,8 @@
 
 	for(var/trait in traits_applied)
 		ADD_TRAIT(H, trait, TRAIT_GENERIC)
-	if(isvillager)
-		for(var/mob/M in GLOB.billagerspawns)
+	if(isgarrisong)
+		for(var/mob/M in GLOB.garrisonspawns)
 			to_chat(M, "<span class='info'>[H.real_name] is the [name].</span>")
 		GLOB.billagerspawns -= H
 
