@@ -3398,4 +3398,7 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+//begin oprime classes
+#include "code/modules/jobs/job_types/roguetown/garrison/types/_advclassg.dm"
+#include "code/modules/jobs/job_types/roguetown/garrison/types/veteran/EXAMPLE"
 // END_INCLUDE
