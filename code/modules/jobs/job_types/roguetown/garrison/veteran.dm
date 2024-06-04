@@ -173,7 +173,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 	var/blacklisted = check_blacklist(ckey)
 	if(possibleclass.len && !blacklisted)
 		var/datum/advclassg/C = input(src, "What is my class?", "Adventure") as null|anything in sortNames(possibleclass)
-		if(C && advsetup)
+		if(C && advsetupg)
 			if(C.maxchosen > -1)
 				for(var/datum/advclassg/A in GLOB.adv_classesg)
 					if(A.type == C.type)
@@ -189,13 +189,13 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 				advsetupg = 0
 				C.equipme(src)
 				invisibility = 0
-				cure_blind("advsetup")
+				cure_blind("advsetupg")
 				return TRUE
 	else
 		testing("RETARD2")
 		advsetupg = 0
 		invisibility = 0
-		cure_blind("advsetup")
+		cure_blind("advsetupg")
 		return TRUE
 
 /mob/living/carbon/human/proc/garrison_hugboxing_start()
