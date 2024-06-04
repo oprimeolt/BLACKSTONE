@@ -150,6 +150,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 			blacklisted = 0
 		return blacklisted
 
+/*
 /proc/find_class_json(name, keyy)
 	if(!name || !keyy)
 		return
@@ -163,6 +164,7 @@ GLOBAL_VAR_INIT(garrison_hugbox_duration_still, 3 MINUTES)
 			X = ckey(X)
 			if(X == keyy)
 				return TRUE
+*/
 
 /mob/living/carbon/human/proc/advsetupg()
 	if(!advsetupg)
